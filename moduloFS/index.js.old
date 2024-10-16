@@ -1,0 +1,18 @@
+//ABRIR UM ARQUIVO .TXT
+const fs = require("fs");
+
+//console.log(fs)
+fs.readFile("./docs/index.html", "utf8", function (err, arquivo) {
+  if (err) {
+    console.error("Erro::" + err);
+  } else {
+    //console.log(arquivo);
+    // console.log(arquivo.toString());
+
+    // const dados = JSON.parse(arquivo);
+    // console.log(dados.nome);
+    // console.log(dados.profissao);
+    // console.log(dados.idade);
+    console.log(arquivo); //roda o arquivo CRUs
+  }
+});
